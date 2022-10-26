@@ -12,9 +12,9 @@ read NOTION_API_KEY
 echo "Enter the bearer token"
 read BEARER_TOKEN
 # Write the .env file with the above content in the back/src folder
-echo "DATATLAS_BACK_END_PORT=$SERVER_PORT" >> back/src/.env
-echo "NOTION_API_KEY=$NOTION_API_KEY" >> back/src/.env
-echo "BEARER_TOKEN=$BEARER_TOKEN" >> back/src/.env
+echo "DATATLAS_BACK_END_PORT=$SERVER_PORT" >> $DATATLAS_PATH/back/src/.env
+echo "NOTION_API_KEY=$NOTION_API_KEY" >> $DATATLAS_PATH/back/src/.env
+echo "BEARER_TOKEN=$BEARER_TOKEN" >> $DATATLAS_PATH/back/src/.env
 
 # write a a .env file with the following content: 
 # REACT_APP_BACKEND_URL='URl_To_BACK_API'
@@ -27,5 +27,5 @@ if [ -z "$BACKEND_URL" ]; then
   BACKEND_URL="http://localhost:3000"
 fi
 # Else write the .env file with the read value
-echo "REACT_APP_BACKEND_URL=$BACKEND_URL" >> front/src/.env
+echo "REACT_APP_BACKEND_URL=$BACKEND_URL" >> $DATATLAS_PATH/front/src/.env
 

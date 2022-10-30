@@ -18,5 +18,5 @@ echo "BEARER_TOKEN=$BEARER_TOKEN" >> $DATATLAS_PATH/back/.env
 
 # write a a .env file with the following content: 
 # REACT_APP_BACKEND_URL='URl_To_BACK_API'
-echo "REACT_APP_BACKEND_URL=http://localhost:$SERVER_PORT" >> $DATATLAS_PATH/front/src/.env
+echo "REACT_APP_BACKEND_URL=http://localhost:$SERVER_PORT" >> $DATATLAS_PATH/front/.env
 

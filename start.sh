@@ -13,7 +13,7 @@ case $choice in
        export DATATLAS_PATH=$path
        sh scripts/initDevNpm.sh
        ;;
-    2) echo "Init dev environment with docker"
+    2) echo "WIP - NOT WORKING Init dev environment with docker"
        echo "On wich path do you want to init the project ?"
        read -p "Enter the path: " path
        export DATATLAS_PATH=$path

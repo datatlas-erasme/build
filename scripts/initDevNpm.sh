@@ -1,4 +1,4 @@
-#sh scripts/getGit.sh
+sh scripts/getGit.sh
 sh scripts/writeEnv.sh
 
 sh scripts/setConfFiles.sh

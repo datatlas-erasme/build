@@ -11,7 +11,7 @@ echo "Choose the config folder you want to use"
 for folder in configs/*; do
   echo $folder '\n'
 done
-read -p "Enter the folder name: (ex: opendata_alimentaire)" folder
+read -p "Enter the folder name (ex: opendata_alimentaire) : " folder
 cp -r configs/$folder/* $DATATLAS_PATH/back/data
 
 # remove KeplerConfiguration.json and LayersConfiguration.json and rename the files in the folder to KeplerConfiguration.json and LayersConfiguration.json

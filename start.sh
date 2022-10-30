@@ -4,7 +4,7 @@
 
 echo "Please choose an option:"
 echo "1- Init dev environment with npm"
-echo "2- Init dev environment with docker"
+echo "2- WIP - NOT WORKING Init dev environment with docker"
 read -p "Enter your choice: " choice
 case $choice in
     1) echo "Init dev environment with npm"
